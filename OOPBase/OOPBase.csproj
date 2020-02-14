@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Base\Animal.cs" />
+    <Compile Include="Derived\Cat.cs" />
+    <Compile Include="Derived\Dog.cs" />
+    <Compile Include="OOPBaseMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

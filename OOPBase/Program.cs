@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPBaseKnowledge
+namespace OOPBase
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Testing");
+            Console.ReadLine();
         }
     }
 }

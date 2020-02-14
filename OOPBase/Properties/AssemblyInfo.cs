@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("OOPBaseKnowledge")]
+[assembly: AssemblyTitle("OOPBase")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OOPBaseKnowledge")]
+[assembly: AssemblyProduct("OOPBase")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("fd9d4208-5382-4f78-b878-7a5b847765f7")]
+[assembly: Guid("e08e4785-ca80-4f07-9f01-2c7da5e374d0")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

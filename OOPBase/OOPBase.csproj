@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FD9D4208-5382-4F78-B878-7A5B847765F7}</ProjectGuid>
+    <ProjectGuid>{E08E4785-CA80-4F07-9F01-2C7DA5E374D0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOPBaseKnowledge</RootNamespace>
-    <AssemblyName>OOPBaseKnowledge</AssemblyName>
+    <RootNamespace>OOPBase</RootNamespace>
+    <AssemblyName>OOPBase</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

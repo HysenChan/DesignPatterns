@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPBase
 {
-    class Animal
+    abstract class Animal
     {
         protected string name = "";
         public Animal(string name)
@@ -33,12 +33,9 @@ namespace OOPBase
             {
                 result += getShoutSound() + ",";
             }
-            return "我的名字叫："+name+" "+result;
+            return "我的名字叫：" + name + " " + result;
         }
 
-        protected virtual string getShoutSound()
-        {
-            return "";
-        }
+        protected abstract string getShoutSound();
     }
 }

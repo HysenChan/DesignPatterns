@@ -46,6 +46,9 @@
     <Compile Include="Base\Animal.cs" />
     <Compile Include="Derived\Cat.cs" />
     <Compile Include="Derived\Dog.cs" />
+    <Compile Include="Derived\HankDog.cs" />
+    <Compile Include="Derived\MachineCat.cs" />
+    <Compile Include="Interface\IChange.cs" />
     <Compile Include="OOPBaseMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

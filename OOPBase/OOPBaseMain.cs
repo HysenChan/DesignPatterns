@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPBase
 {
-    class OOPBaseMain
+    class Polymorphism
     {
         private static Animal[] arrayAnimals;
 

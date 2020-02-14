@@ -14,15 +14,9 @@ namespace OOPBase
         public Cat(string name):base(name)
         { }
 
-        public override string Shout()
+        protected override string getShoutSound()
         {
-            string result = "";
-            for (int i = 0; i < shoutNum; i++)
-            {
-                result += "喵,";
-            }
-
-            return "我的名字为" + name + " " + result;
+            return "喵";
         }
     }
 }

@@ -26,7 +26,17 @@ namespace OOPBase
             set { shoutNum = value; }
         }
 
-        public virtual string Shout()
+        public string Shout()
+        {
+            string result = "";
+            for (int i = 0; i < shoutNum; i++)
+            {
+                result += getShoutSound() + ",";
+            }
+            return "我的名字叫："+name+" "+result;
+        }
+
+        protected virtual string getShoutSound()
         {
             return "";
         }

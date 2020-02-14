@@ -14,15 +14,9 @@ namespace OOPBase
         public Dog(string name) : base(name)
         { }
 
-        public override string Shout()
+        protected override string getShoutSound()
         {
-            string result = "";
-            for (int i = 0; i < shoutNum; i++)
-            {
-                result += "汪,";
-            }
-
-            return "我的名字为" + name + " " + result;
+            return "汪";
         }
     }
 }

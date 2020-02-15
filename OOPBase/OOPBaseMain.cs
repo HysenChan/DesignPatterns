@@ -87,6 +87,40 @@ namespace OOPBase
             }
         }
 
+        static void Main3(string[] args)
+        {
+            InstanceArrayList();
+            ShoutArrayList();
+            Console.ReadKey();
+        }
+    }
+
+    /// <summary>
+    /// 泛型
+    /// </summary>
+    class Generic
+    {
+        static IList<Animal> arrayListAnimal;//==List<Animal> arrayListAnimal;
+        public static void InstanceArrayList()
+        {
+
+            arrayListAnimal = new List<Animal>();
+            arrayListAnimal.Add(new Cat("Cat1"));
+            arrayListAnimal.Add(new Dog("Dog1"));
+            arrayListAnimal.Add(new Cat("Cat2"));
+            arrayListAnimal.Add(new Dog("Dog2"));
+
+            Console.WriteLine(arrayListAnimal.Count);
+        }
+
+        private static void ShoutArrayList()
+        {
+            foreach (Animal item in arrayListAnimal)
+            {
+                Console.WriteLine(item.Shout());
+            }
+        }
+
         static void Main(string[] args)
         {
             InstanceArrayList();

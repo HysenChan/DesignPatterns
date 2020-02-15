@@ -28,7 +28,7 @@ namespace OOPBase
             this.name = name;
         }
 
-        public delegate void CatShoutEventhandler();
+        public delegate void CatShoutEventhandler(object sender,CatShoutEventArgs args);
 
         public event CatShoutEventhandler CatShout;
 
@@ -36,7 +36,12 @@ namespace OOPBase
         {
             Console.WriteLine("喵，我是{0}.",name);
 
-            CatShout?.Invoke();
+            if (CatShout!=null)
+            {
+                CatShoutEventArgs e = new CatShoutEventArgs();
+                e.Name = this.name;
+                CatShout(this, e);
+            }
         }
     }
 }

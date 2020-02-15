@@ -14,9 +14,9 @@ namespace OOPBase
             this.name = name;
         }
 
-        public void Run()
+        public void Run(object sender,CatShoutEventArgs args)
         {
-            Console.WriteLine("老猫来了，{0}快跑",name);
+            Console.WriteLine("老猫{0}来了，{1}快跑",args.Name,name);
         }
     }
 }

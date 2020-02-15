@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,7 +45,7 @@ namespace OOPBase
     /// </summary>
     class Interface
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             MachineCat mCat = new MachineCat("叮当");
             HankDog hDog = new HankDog("汉克");
@@ -56,6 +57,40 @@ namespace OOPBase
             Console.WriteLine(arrayChange[0].ChangeThing("时光门!"));
             Console.WriteLine(arrayChange[1].ChangeThing("二郎神!"));
 
+            Console.ReadKey();
+        }
+    }
+
+    /// <summary>
+    /// 集合
+    /// </summary>
+    partial class Assembly
+    {
+        static IList arrayAnimal;//==ArrayList arrayAnimal;
+        public static void InstanceArrayList()
+        {
+
+            arrayAnimal = new ArrayList();
+            arrayAnimal.Add(new Cat("Cat1"));
+            arrayAnimal.Add(new Dog("Dog1"));
+            arrayAnimal.Add(new Cat("Cat2"));
+            arrayAnimal.Add(new Dog("Dog2"));
+
+            Console.WriteLine(arrayAnimal.Count);
+        }
+
+        private static void ShoutArrayList()
+        {
+            foreach (Animal item in arrayAnimal)
+            {
+                Console.WriteLine(item.Shout());
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            InstanceArrayList();
+            ShoutArrayList();
             Console.ReadKey();
         }
     }

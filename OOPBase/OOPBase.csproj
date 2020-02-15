@@ -48,6 +48,7 @@
     <Compile Include="Derived\Dog.cs" />
     <Compile Include="Derived\HankDog.cs" />
     <Compile Include="Derived\MachineCat.cs" />
+    <Compile Include="Derived\Mouse.cs" />
     <Compile Include="Interface\IChange.cs" />
     <Compile Include="OOPBaseMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

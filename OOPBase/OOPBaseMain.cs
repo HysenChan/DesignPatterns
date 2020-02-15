@@ -121,10 +121,30 @@ namespace OOPBase
             }
         }
 
-        static void Main(string[] args)
+        static void Main4(string[] args)
         {
             InstanceArrayList();
             ShoutArrayList();
+            Console.ReadKey();
+        }
+    }
+
+    /// <summary>
+    /// 委托与事件
+    /// </summary>
+    class DelegateAndEvent
+    {
+        static void Main(string[] args)
+        {
+            TomCat cat = new TomCat("Tom");
+            Mouse mouse1 = new Mouse("Mouse1");
+            Mouse mouse2 = new Mouse("Mouse2");
+
+            cat.CatShout += new TomCat.CatShoutEventhandler(mouse1.Run);
+            cat.CatShout += new TomCat.CatShoutEventhandler(mouse2.Run);
+
+            cat.Shout();
+
             Console.ReadKey();
         }
     }

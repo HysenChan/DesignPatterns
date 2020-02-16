@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleFactoryPattern
 {
-    class Program
+    class SimpleFactoryPatternMain
     {
         static void Main(string[] args)
         {

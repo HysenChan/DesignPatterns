@@ -10,23 +10,24 @@ namespace SimpleFactoryPattern
     {
         static void Main(string[] args)
         {
-            try
-            {
-                Console.WriteLine("请输入数字A：");
-                string strNumberA = Console.ReadLine();
-                Console.WriteLine("请输入运算符号(+、-、*、/)：");
-                string strOperate = Console.ReadLine();
-                Console.WriteLine("请输入数字B：");
-                string strNumberB = Console.ReadLine();
-                string strResult = "";
-                strResult = Convert.ToString(Operation.GetResult(Convert.ToDouble(strNumberA), Convert.ToDouble(strNumberB), strOperate));
-                Console.WriteLine("结果是：" + strResult);
-                Console.ReadKey();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("你输入的有错：" + ex.Message);
-            }
+            Operation oper;
+
+            Console.WriteLine("请输入数字A：");
+            string strNumberA = Console.ReadLine();
+
+            Console.WriteLine("请输入运算符号(+、-、*、/)：");
+            string strOperate = Console.ReadLine();
+            oper = OperationFactory.createOperate(strOperate);
+
+            Console.WriteLine("请输入数字B：");
+            string strNumberB = Console.ReadLine();
+
+            oper.NumberA =Convert.ToDouble(strNumberA);
+            oper.NumberB = Convert.ToDouble(strNumberB);
+
+            double strResult = oper.GetResult();
+            Console.WriteLine("结果是：" + strResult);
+            Console.ReadKey();
         }
     }
 }

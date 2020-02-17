@@ -30,7 +30,7 @@ namespace StrategyPattern
 
         public double GetResult(double money)
         {
-            return cs.acceptCash(money);
+            return cs.AcceptCash(money);
         }
     }
 }

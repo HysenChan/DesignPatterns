@@ -14,7 +14,7 @@ namespace StrategyPattern
             this.moneyRebate = double.Parse(moneyRebate);
         }
 
-        public override double acceptCash(double money)
+        public override double AcceptCash(double money)
         {
             return money*moneyRebate;
         }

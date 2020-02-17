@@ -8,6 +8,6 @@ namespace StrategyPattern
 {
     abstract class CashSuper
     {
-        public abstract double acceptCash(double money);
+        public abstract double AcceptCash(double money);
     }
 }

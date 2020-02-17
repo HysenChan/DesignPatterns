@@ -8,7 +8,7 @@ namespace StrategyPattern
 {
     class CashFactory
     {
-        public static CashSuper createCashAccept(string type)
+        public static CashSuper CreateCashAccept(string type)
         {
             CashSuper cs = null;
             switch (type)

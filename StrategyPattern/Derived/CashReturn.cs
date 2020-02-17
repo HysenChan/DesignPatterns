@@ -16,7 +16,7 @@ namespace StrategyPattern
             this.moneyReturn = double.Parse(moneyReturn);
         }
 
-        public override double acceptCash(double money)
+        public override double AcceptCash(double money)
         {
             double result = money;
             if (money>=moneyCondition)

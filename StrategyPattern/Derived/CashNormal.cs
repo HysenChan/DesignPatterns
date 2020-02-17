@@ -8,7 +8,7 @@ namespace StrategyPattern
 {
     class CashNormal : CashSuper
     {
-        public override double acceptCash(double money)
+        public override double AcceptCash(double money)
         {
             return money;
         }

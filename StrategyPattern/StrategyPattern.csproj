@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\CashFactory.cs" />
+    <Compile Include="Derived\CashNormal.cs" />
+    <Compile Include="Derived\CashRebate.cs" />
+    <Compile Include="Derived\CashReturn.cs" />
+    <Compile Include="Base\CashSuper.cs" />
     <Compile Include="StrategyPatternMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

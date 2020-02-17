@@ -8,14 +8,23 @@ namespace StrategyPattern
 {
     class StrategyPatternMain
     {
-        static void Main(string[] args)
+        static double total = 0d;
+        
+        private static void Strategy()
         {
-            CashSuper cashSuper = CashFactory.createCashAccept("满300减100");
-            double totalPrices = 0d;
-            double total=0d,price = 130d, num = 3d;
-            totalPrices = cashSuper.acceptCash(price * num);
+            Console.WriteLine("请输入收费标准：");
+            string inputType = Console.ReadLine();
+            CashContext cashContext = new CashContext(inputType);
+            
+            double totalPrices = 0d,price = 130d, num = 3d; 
+            totalPrices = cashContext.GetResult(price* num);
             total += totalPrices;
             Console.WriteLine("单价为：{0}，数量：{1}，总价：{2}",price,num,total);
+        }
+
+        static void Main(string[] args)
+        {
+            Strategy();
             Console.ReadLine();
         }
     }

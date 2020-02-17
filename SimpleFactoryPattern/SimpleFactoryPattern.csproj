@@ -48,7 +48,7 @@
     <Compile Include="Base\OperationDiv.cs" />
     <Compile Include="Base\OperationMul.cs" />
     <Compile Include="Base\OperationSub.cs" />
-    <Compile Include="OperationFactory.cs" />
+    <Compile Include="Base\OperationFactory.cs" />
     <Compile Include="SimpleFactoryPatternMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

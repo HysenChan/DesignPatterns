@@ -44,11 +44,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\Component.cs" />
+    <Compile Include="Base\Person.cs" />
     <Compile Include="Derived\ConcreteComponent.cs" />
+    <Compile Include="Derived\Finery.cs" />
     <Compile Include="Heired\ConcreteDecoratorA.cs" />
     <Compile Include="Heired\ConcreteDecoratorB.cs" />
     <Compile Include="Derived\Decorator.cs" />
     <Compile Include="DecoratorPatternMain.cs" />
+    <Compile Include="Heired\BrokenShoes.cs" />
+    <Compile Include="Heired\BusinessSuit.cs" />
+    <Compile Include="Heired\LeatherShoes.cs" />
+    <Compile Include="Heired\Tie.cs" />
+    <Compile Include="Heired\BigTrouser.cs" />
+    <Compile Include="Heired\TShirts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

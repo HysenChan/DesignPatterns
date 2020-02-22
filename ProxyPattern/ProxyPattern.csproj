@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="ProxyPatternMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pursuit.cs" />
+    <Compile Include="SchoolGirl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

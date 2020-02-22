@@ -10,7 +10,14 @@ namespace ProxyPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("这是代理模式！");
+            SchoolGirl schoolGirl = new SchoolGirl();
+            schoolGirl.Name = "夏兰";
+
+            Pursuit pursuit = new Pursuit(schoolGirl);
+            pursuit.GiveChocolate();
+            pursuit.GiveDolls();
+            pursuit.GiveFlowers();
+
             Console.ReadKey();
         }
     }

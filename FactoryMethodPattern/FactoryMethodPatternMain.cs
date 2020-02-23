@@ -18,6 +18,16 @@ namespace FactoryMethodPattern
             v1.Wash();
             v2.Sweep();
             s1.BuyRice();
+            Console.WriteLine();
+
+            //工厂方法模式实现：
+            IFactory undergraduate = new UndergraduateFactory();
+            LeiFeng leiFeng1 = undergraduate.CreateLeiFeng();
+            IFactory volunteer = new VolunteerFactory();
+            LeiFeng leiFeng2 = volunteer.CreateLeiFeng();
+
+            leiFeng1.Sweep();
+            leiFeng2.BuyRice();
 
             Console.ReadKey();
         }

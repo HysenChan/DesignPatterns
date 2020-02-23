@@ -44,11 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FactoryMethodPatternMain.cs" />
-    <Compile Include="LeiFeng.cs" />
+    <Compile Include="FactoryMethod\IFactory.cs" />
+    <Compile Include="Common\LeiFeng.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleFactory.cs" />
-    <Compile Include="Undergraduate.cs" />
-    <Compile Include="Volunteer.cs" />
+    <Compile Include="SimpleFactory\SimpleFactory.cs" />
+    <Compile Include="Common\Undergraduate.cs" />
+    <Compile Include="FactoryMethod\UndergraduateFactory.cs" />
+    <Compile Include="Common\Volunteer.cs" />
+    <Compile Include="FactoryMethod\VolunteerFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

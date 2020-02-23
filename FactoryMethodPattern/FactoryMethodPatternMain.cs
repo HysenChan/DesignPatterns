@@ -10,7 +10,11 @@ namespace FactoryMethodPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("这是工厂方法模式！");
+            LeiFeng leiFeng = new Undergraduate();
+            leiFeng.BuyRice();
+            leiFeng.Sweep();
+            leiFeng.Wash();
+
             Console.ReadKey();
         }
     }

@@ -13,10 +13,10 @@ namespace ProxyPattern
             SchoolGirl schoolGirl = new SchoolGirl();
             schoolGirl.Name = "夏兰";
 
-            Pursuit pursuit = new Pursuit(schoolGirl);
-            pursuit.GiveChocolate();
-            pursuit.GiveDolls();
-            pursuit.GiveFlowers();
+            Proxy proxy = new Proxy(schoolGirl);
+            proxy.GiveChocolate();
+            proxy.GiveDolls();
+            proxy.GiveFlowers();
 
             Console.ReadKey();
         }

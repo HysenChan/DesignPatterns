@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace ProxyPattern
 {
-    class Pursuit:IGiveGift
+    class Proxy:IGiveGift
     {
-        SchoolGirl schoolGirl;
+        Pursuit pursuit;
 
-        public Pursuit(SchoolGirl schoolGirl)
+        public Proxy(SchoolGirl schoolGirl)
         {
-            this.schoolGirl = schoolGirl;
+            pursuit = new Pursuit(schoolGirl);
         }
 
         public void GiveDolls()
         {
-            Console.WriteLine(schoolGirl.Name+"送你洋娃娃");
+            pursuit.GiveDolls();
         }
 
         public void GiveFlowers()
         {
-            Console.WriteLine(schoolGirl.Name + "送你花");
+            pursuit.GiveFlowers();
         }
 
         public void GiveChocolate()
         {
-            Console.WriteLine(schoolGirl.Name + "送你巧克力");
+            pursuit.GiveChocolate();
         }
     }
 }

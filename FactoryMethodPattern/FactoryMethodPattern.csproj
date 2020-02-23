@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8D5B72E5-BE2D-4E5E-991F-7F62E80D50C0}</ProjectGuid>
+    <ProjectGuid>{2855B39F-7AEA-4092-B81C-5494C6B674CC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ProxyPattern</RootNamespace>
-    <AssemblyName>ProxyPattern</AssemblyName>
+    <RootNamespace>FactoryMethodPattern</RootNamespace>
+    <AssemblyName>FactoryMethodPattern</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IGiveGift.cs" />
-    <Compile Include="Proxy.cs" />
-    <Compile Include="ProxyPatternMain.cs" />
+    <Compile Include="FactoryMethodPatternMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Pursuit.cs" />
-    <Compile Include="SchoolGirl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

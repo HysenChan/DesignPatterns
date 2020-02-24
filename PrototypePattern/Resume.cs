@@ -20,6 +20,11 @@ namespace PrototypePattern
             work = new WorkExperience();
         }
 
+        public Resume(WorkExperience work)
+        {
+            this.work = (WorkExperience)work.Clone();
+        }
+
         /// <summary>
         /// 设置个人信息
         /// </summary>
@@ -53,7 +58,11 @@ namespace PrototypePattern
 
         public object Clone()
         {
-            return MemberwiseClone();
+            Resume obj = new Resume(work);
+            obj.name = name;
+            obj.sex = sex;
+            obj.age = age;
+            return obj;
         }
     }
 }

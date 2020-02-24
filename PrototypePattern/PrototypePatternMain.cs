@@ -14,9 +14,8 @@ namespace PrototypePattern
             resume.SetPersonalInfo("男", "21");
             resume.SetWorkExperience("2019-2020", "IT公司");
 
-            Resume resume1 = new Resume("小明");
-            resume1.SetPersonalInfo("男", "21");
-            resume1.SetWorkExperience("2019-2020", "IT公司");
+            Resume resume1 = (Resume)resume.Clone();
+            resume1.SetWorkExperience("2019-2021", "IT公司");
 
             resume.Diplay();
             resume1.Diplay();

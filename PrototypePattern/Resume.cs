@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrototypePattern
 {
-    class Resume
+    class Resume:ICloneable
     {
         private string name;
         private string sex;
@@ -48,6 +48,11 @@ namespace PrototypePattern
         {
             Console.WriteLine("{0} {1} {2}",name,sex,age);
             Console.WriteLine("工作经历：{0} {1}",company,timeArea);
+        }
+
+        public object Clone()
+        {
+            return MemberwiseClone();
         }
     }
 }

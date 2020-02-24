@@ -11,12 +11,13 @@ namespace PrototypePattern
         private string name;
         private string sex;
         private string age;
-        private string timeArea;
-        private string company;
+
+        private WorkExperience work;
 
         public Resume(string name)
         {
             this.name = name;
+            work = new WorkExperience();
         }
 
         /// <summary>
@@ -35,10 +36,10 @@ namespace PrototypePattern
         /// </summary>
         /// <param name="timeArea">工作时长</param>
         /// <param name="company">工作公司</param>
-        public void SetWorkExperience(string timeArea,string company)
+        public void SetWorkExperience(string workDate,string company)
         {
-            this.timeArea = timeArea;
-            this.company = company;
+            work.WorkDate = workDate;
+            work.Company = company;
         }
 
         /// <summary>
@@ -47,7 +48,7 @@ namespace PrototypePattern
         public void Diplay()
         {
             Console.WriteLine("{0} {1} {2}",name,sex,age);
-            Console.WriteLine("工作经历：{0} {1}",company,timeArea);
+            Console.WriteLine("工作经历：{0} {1}",work.WorkDate,work.Company);
         }
 
         public object Clone()

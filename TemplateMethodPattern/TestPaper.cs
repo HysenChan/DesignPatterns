@@ -8,6 +8,13 @@ namespace TemplateMethodPattern
 {
     class TestPaper
     {
+        public void TemplateMethod()
+        {
+            TestQusetion1();
+            TestQusetion2();
+            TestQusetion3();
+        }
+
         public void TestQusetion1()
         {
             Console.WriteLine("杨过得到，后来给了郭靖，炼成倚天剑、屠龙刀的玄铁可能是【】a.球墨铸铁 b.马口铁 c.高速合金钢 d.碳素纤维");

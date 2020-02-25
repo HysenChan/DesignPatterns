@@ -11,19 +11,31 @@ namespace TemplateMethodPattern
         public new void TestQusetion1()
         {
             base.TestQusetion1();
-            Console.WriteLine("a");
         }
 
         public new void TestQusetion2()
         {
             base.TestQusetion2();
-            Console.WriteLine("b");
         }
 
         public new void TestQusetion3()
         {
             base.TestQusetion3();
-            Console.WriteLine("c");
+        }
+
+        protected override string Answer1()
+        {
+            return "a";
+        }
+
+        protected override string Answer2()
+        {
+            return "b";
+        }
+
+        protected override string Answer3()
+        {
+            return "c";
         }
     }
 }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="TemplateMethodPatternMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestPaper.cs" />
     <Compile Include="TestPaperA.cs" />
     <Compile Include="TestPaperB.cs" />
   </ItemGroup>

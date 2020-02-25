@@ -8,21 +8,6 @@ namespace TemplateMethodPattern
 {
     class TestPaperB:TestPaper
     {
-        public new void TestQusetion1()
-        {
-            base.TestQusetion1();
-        }
-
-        public new void TestQusetion2()
-        {
-            base.TestQusetion2();
-        }
-
-        public new void TestQusetion3()
-        {
-            base.TestQusetion3();
-        }
-
         protected override string Answer1()
         {
             return "c";

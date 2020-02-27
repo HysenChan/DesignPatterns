@@ -10,7 +10,9 @@ namespace FacadePattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("这是外观模式！");
+            Facade facade = new Facade();
+            facade.MethodA();
+            facade.MethodB();
             Console.ReadKey();
         }
     }
